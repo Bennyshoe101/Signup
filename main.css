@@ -1,0 +1,72 @@
+body *{
+	box-sizing: border-box;
+	background-color: azure;
+}
+
+.logo {
+	display: block;
+	height: 35px;
+	width: auto;
+	margin: 0 auto 30px;
+}
+
+body {
+	font-family: helvetica;
+	text-align: center;
+	width: 400px;
+	padding-right: 40px;
+	padding-left: 40px;
+	height: 600px;
+	background-color: azure;
+}
+
+.signup-form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 40px;
+    border-radius: 3px;
+    background: white;
+}
+
+ legend {
+    text-align: center;
+    font-weight: 300;
+    color: #565656;
+    margin: 0 auto 45px;
+    font-size: 35px;
+    line-height: 38px;
+    letter-spacing: 0;
+}
+
+input label button {
+	background: white;
+    border: 2px solid #e7e7e7;
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    transition: opacity 0.4s;
+    text-align: left;
+    height: auto;
+}
+
+p {
+	text-align: left;
+}
+
+p a {
+	color: gray;
+}
+.footer a{
+	color: gray;
+}
+
+.footer a:hover {
+	color: gray;
+}
+
+.footer p {
+	margin-bottom: 40px;
+}
