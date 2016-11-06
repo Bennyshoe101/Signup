@@ -1,24 +1,23 @@
-body *{
-	box-sizing: border-box;
-	background-color: azure;
+
+body {
+    background: #298eea;
+    font-family: 'Roboto', helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 .logo {
-	display: block;
-	height: 35px;
-	width: auto;
-	margin: 0 auto 30px;
+    display: block;
+    height: 35px;
+    width: auto;
+    margin: 0 auto 30px;
 }
 
-body {
-	font-family: helvetica;
-	text-align: center;
-	width: 400px;
-	padding-right: 40px;
-	padding-left: 40px;
-	height: 600px;
-	background-color: azure;
-}
 
 .signup-form {
     margin: 0 auto;
@@ -28,7 +27,7 @@ body {
     background: white;
 }
 
- legend {
+.signup-form legend {
     text-align: center;
     font-weight: 300;
     color: #565656;
@@ -38,8 +37,14 @@ body {
     letter-spacing: 0;
 }
 
-input label button {
-	background: white;
+/* button ultimately ultimately gets a different background
+color below, but because it largely overlaps with email/password
+input styling, we include it in the same style block, then
+override, below. */
+input[type='email'],
+input[type='password'],
+button[type='submit'] {
+    background: #fcfcfc;
     border: 2px solid #e7e7e7;
     margin: 20px auto;
     padding: 15px;
@@ -52,21 +57,66 @@ input label button {
     height: auto;
 }
 
-p {
-	text-align: left;
+input[type='email']:focus,
+input[type='password']:focus,
+button[type='submit']:focus {
+    border-color: #E7E7E7;
+    box-shadow: none;
 }
 
-p a {
-	color: gray;
-}
-.footer a{
-	color: gray;
+button[type='submit'] {
+    color: white;
+    background: #15CD72;
+    border: 0;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    height: auto;
 }
 
-.footer a:hover {
-	color: gray;
+button:hover[type='submit'] {
+    background-color: #0CB863;
+    -webkit-transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    transition: background 0.1s;
 }
 
-.footer p {
-	margin-bottom: 40px;
+.signup-form p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: #999;
 }
+
+.signup-form a {
+    text-decoration: none;
+    color: #999;
+    border-bottom: 1px solid #bbb;
+}
+
+.signup-form a:hover {
+    border-color: #999;
+    color: #777;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    font-weight: 600;
+    border: 0;
+    padding: 0;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover { color: #E7F1F9 }
+
+.footer p { margin-bottom: 40px }
